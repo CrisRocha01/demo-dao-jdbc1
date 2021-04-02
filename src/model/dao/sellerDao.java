@@ -6,7 +6,7 @@ import model.entities.Seller;
 
 
 
-public interface sellerDao {
+public interface SellerDao {
 	
 	void insert(Seller obj);
 	void update(Seller obj);
