@@ -14,6 +14,8 @@ public class Program {
 
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
+		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
 		
@@ -47,19 +49,12 @@ public class Program {
 		System.out.println("Row updated: \n" + sellerDao.findById(1));
 		
 		System.out.println("\n    ======   TEST 6: seller delete   ======");
-		
-		Scanner sc = new Scanner(System.in);
-		
 		System.out.print("Informa o id a ser deletado: ");
 		int id = sc.nextInt();
 		
 		sellerDao.deleteById(id);
 		
 		sc.close();
-		
-		
-		
-		
 
 	}
 
